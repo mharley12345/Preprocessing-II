@@ -179,19 +179,20 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
 }
 .navbar {
   display: flex;
-  max-width: 100%;
+  max-width: 960px;
   justify-content: space-between;
-  border-bottom: 2px dashed black;
+  border-bottom: 2px dashed #C0C0C0;
 }
 h1 {
   font-size: 60px;
-  padding-top: 10px;
+  padding-top: 25px;
+  padding-bottom: 3px;
 }
 nav {
   font-size: 20px;
@@ -199,7 +200,8 @@ nav {
   align-items: center;
 }
 nav a {
-  padding: 49px;
+  padding-top: 24px;
+  padding-right: 50px;
 }
 @media (max-width:500px) {
   header {
@@ -282,17 +284,10 @@ nav a {
 header {
   display: flex;
   flex-direction: column;
-  padding-left: 33em;
-  padding-right: 33em;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header img {
   width: 100%;
-}
-hr {
-  height: 2px;
-  columns: lightgray;
-  width: 55%;
-  border-style: dashed;
 }
 button {
   border-radius: 15px;
