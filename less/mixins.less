@@ -1,1 +1,29 @@
 // Mixins in here
+.flex  {
+display: flex;
+
+}
+.rcorners4 {
+    border-radius: 15px;
+    background: @button-bg;
+    padding: 7px;
+    width: 192px;
+    height: 36px;
+    color: white;
+    font-size: 14px;
+  }
+  .keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+  }
+  
+  .animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+  }
+  
+@button-color:@white;
+@button-background-color:@button-bg;
+@button-color-hover:darken(@button-bg,50%);
