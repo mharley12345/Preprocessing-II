@@ -336,6 +336,10 @@ button {
   color: white;
   font-size: 14px;
 }
+button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
 @media (max-width:500px) {
   .inverse-content {
     display: flex;
