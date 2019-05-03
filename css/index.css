@@ -193,15 +193,21 @@ h1 {
   font-size: 60px;
   padding-top: 25px;
   padding-bottom: 3px;
+  width: 24%;
 }
-nav {
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar nav {
   font-size: 20px;
   display: flex;
-  align-items: center;
 }
 nav a {
-  padding-top: 24px;
+  margin-bottom: 15px;
   padding-right: 50px;
+  text-decoration: none;
+  color: black;
 }
 @media (max-width:500px) {
   header {
@@ -210,18 +216,19 @@ nav a {
     padding: 0;
   }
   h1 {
-    padding: 0;
+    font-size: 28px;
     align-self: center;
     justify-self: center;
+    width: 28%;
   }
   nav {
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: flex-end;
   }
   nav a {
-    padding: 1px;
+    padding: 16px;
   }
 }
 .footer {
@@ -297,4 +304,13 @@ button {
   height: 36px;
   color: white;
   font-size: 14px;
+}
+@media (max-width:500px) {
+  .content-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-section .text-content {
+    width: 95%;
+  }
 }
